@@ -137,7 +137,6 @@ export default class App extends Component {
         completed: todoCompleted
       }).then(() => {
         console.log(`update todo ${todoId}`, todoCompleted)
-        const eventName = (todoCompleted) ? 'todoCompleted' : 'todoUnfinished'
       }).catch((e) => {
         console.log('An API error occurred', e)
       })
